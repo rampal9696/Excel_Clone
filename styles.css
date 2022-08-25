@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0px;
+  }
+  /* ============  MENU CONTAINER ============ */
+  .menu-container {
+      background-color: #f5f6fa;;
+    height: 3rem;
+    font-size: medium;
+    display: flex;
+    padding-left:2rem;
+    align-items: center;
+    gap:2rem;
+    /* justify-content: space-between; */
+  }
+  button {
+      background-color:white;
+  }
+  
+  .menu-container>*{
+      height: 70%;
+      /* border:1px solid; */
+  }
+  
+  .font-size{
+      width: 5%;
+      border-radius:0.5rem;
+  }
+  
+  .font-family{
+      border-radius: 0.5rem;
+      width:10%;
+  }
+  
+  .bui-container{
+      display: flex;
+      gap:0.1rem;
+      align-items: center;
+      
+  }
+  
+  .bui-container>*{
+      width:30%;
+      height:80%;
+      text-align: center;
+      min-width: 3rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border: 1.2px solid;
+     border-radius: 5px;
+      height: 100%;
+      width:30%
+  }
+  .align-container{
+      min-width: 10rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  }
+  .align-container>*{
+      border: 1.2px solid ;
+     border-radius: 5px;
+      height: 100%;
+      width:30%;
+  }
+  .left{
+      text-align: left;
+  }
+  .right{
+      text-align:right;
+  }
+  
+  
+  .color-container{
+      height: 60%;
+      /* min-width: 1rem; */
+      display: flex;
+      /* justify-content: left; */
+      /* align-items: left; */
+     /* gap: 4px; */
+     
+  }
+  .color-container>*{
+      border: 1px solid;
+      height: 100%;
+      width:50%;
+      border-radius: 4px;
+      gap: 4px;
+  }
+  
+  .font-color{
+      padding-top: 3px;
+      text-align: left;
+      border-right: 1px solid;
+      
+  }
+  .backgroundcolor{
+      /* background-color:rgb(192, 30, 30); */
+      padding-top: 3px;
+      /* padding-right: 2px; */
+      text-align: right;
+  }
+  
+  .nos{
+       border: 1px solid;
+       padding-top: 2px;
+       min-width: 7rem;
+       display: flex;
+       gap:0.2rem;
+       text-align: center;
+       margin-right: 20px;
+    }
+    .nos>*{
+        border: 1.2px solid;
+       border-radius: 5px;
+        height: 100%;
+        width:30%
+    }
+    .colon{
+        font-weight: bold;
+    }
+    .new{
+        border-right: 1px solid;
+    }
+    .save{
+        border-right: 1px solid;
+    }
+  
+  /*  ============  FORMULA CONTAINER ============ */
+  .formula-container {
+    background-color: lightblue;
+    height: 2rem;
+    display: flex;
+    padding-left :2rem;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .formula-container>*{
+      height:70%;
+  }
+  .address-input{
+      width:4rem;
+      border:1px solid;
+      border-radius:0.5rem;
+  }
+  
+  .formula-input{
+      width: calc( 100vw - 8rem);
+      border:1px solid;
+      border-radius:0.5rem;
+  }
+  /*  ============ grid-container ================= */
+  .grid-container{
+    position: relative;
+    /* after position relative i can change positions of its childrens */
+    /* background-color: lightgreen; */
+    height: calc(100vh - ( 3rem + 2rem + 2rem));
+    overflow: auto;
+  }
+  
+  .left_box{
+      background-color:#dcdde1;
+      
+  }
+  
+  .box{
+      height: 2rem;
+      width: 2rem;
+      text-align: center;
+      border: 1px solid;
+      border-top: none;
+  }
+  
+  .left_col{
+      background-color:#dcdde1;
+      text-align: center;
+  }
+  
+  .top_row{
+      left: 2rem;
+      top: 0rem;
+      position: absolute;
+      height:2rem;
+     display:flex;
+     background-color:#dcdde1;
+  }
+  .grid{
+      background-color:white;
+      position: absolute;
+      top: 2rem;
+      left: 2rem;
+  }
+  .cell{
+      min-width: 5rem;
+      border:1px solid;
+      text-align:center;
+      height: 2rem;
+      overflow:hidden;
+  }
+  
+  .row{
+      display: flex;
+  }
+  
+  /* ==============Sheet-Container ================================== */
+  
+  .sheet-container {
+    background-color: aqua;
+    
+    height: 2rem;
+    /* height: 1.5rem; */
+      /* display: flex; */
+      background-color:#dcdde1;
+    display: flex;
+    /* text-align: center;
+    align-items: space-between; */
+  }
+  
+  .add-btn-container {
+      display: flex;
+      height: 100%;
+      width: 3rem;
+      /* align-items: center; */
+      /* justify-content: space-evenly; */
+      
+      font-size: 1.2rem;
+      color: darkgreen;
+      font-size: small;
+  }
+  
+  .sheet-list {
+      width: calc(100vw - 3rem);
+      /* border: 1px solid; */
+      display:flex;
+      overflow: auto;
+  }
+  
+  .sheet-list::-webkit-scrollbar {
+      display: none;
+  }
+  
+    /* Hide scrollbar for IE, Edge and Firefox */
+  .sheet-list {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
+  .sheet {
+      height: 100%;
+      min-width:5rem;
+      /* border-bottom: 2px solid; */
+      padding-left: 12px;
+      padding-top: 2px;
+      font-size: small ;
+  }
+  .active{
+      background-color: snow;
+      border-bottom:3px solid green;
+         color: darkgreen;
+         font-weight: bold;
+         font-size: medium;
+         border-left: 1px solid;
+         border-right: 1px solid;
+         /* font-size: large; */
+  }
